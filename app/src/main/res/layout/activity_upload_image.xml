@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="uploadImageVM" type="com.jayeshsapplication.app.modules.uploadimage.data.viewmodel.UploadImageVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameUploadimage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnarrowleft"
+            android:layout_gravity="top|start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar android:gravity="start"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUploadImage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_91pxh"
+                        android:layout_weight="0.88"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.02"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="true"
+                        android:text="@{uploadImageVM.uploadImageModel.txtUploadImage}"
+                        style="@style/txtRobotoromanregular24" tools:text="@string/lbl_upload_image"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/frameStackclose"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_158pxv"
+                android:layout_marginEnd="@dimen/_56pxh"
+                android:layout_marginStart="@dimen/_56pxh"
+                android:layout_marginTop="@dimen/_95pxv" android:layout_width="@dimen/_222pxh">
+                <ImageView android:id="@+id/imageImageFour"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_150pxh"
+                    android:layout_marginEnd="@dimen/_7pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_215pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image4}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image4"/>
+                <ImageView android:id="@+id/imageClose"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_15pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_15pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_close"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSelectImage"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:paddingBottom="@dimen/_24pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_24pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_select_image"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_select_image"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnUploadImageOne"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:paddingBottom="@dimen/_24pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_24pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_upload_image"
+                android:textAllCaps="false"
+                style="@style/btnGradientRounded_1" tools:text="@string/lbl_upload_image"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

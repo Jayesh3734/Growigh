@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="introOneVM" type="com.jayeshsapplication.app.modules.introone.data.viewmodel.IntroOneVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearIntroOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameStackskip"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_32pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="@dimen/_90pxh">
+            <TextView android:ellipsize="end" android:id="@+id/txtSkip"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{introOneVM.introOneModel.txtSkip}"
+                style="@style/txtPlusJakartaDisplayregular14" tools:text="@string/lbl_skip"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSkipIntro"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.01"
+                android:paddingBottom="@dimen/_4pxh"
+                android:paddingEnd="@dimen/_8pxh"
+                android:paddingStart="@dimen/_8pxh"
+                android:paddingTop="@dimen/_2pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_skip_intro"
+                android:textAllCaps="false"
+                style="@style/btnRoundedOutline" tools:text="@string/lbl_skip_intro"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/imageBusinesscrisis"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_227pxh"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_76pxv"
+            android:layout_width="@dimen/_330pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_businesscrisis"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_businesscrisis"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnheadline"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_77pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_2">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtHeadline"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_70pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{introOneVM.introOneModel.txtHeadline}"
+                style="@style/txtNotoSansnotosansmedium32" tools:text="@string/lbl_about_us"/>
+            <TextView android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:text="@{introOneVM.introOneModel.txtDescription}"
+                style="@style/txtManroperegular14" tools:text="@string/msg_lorem_ipsum_dol"/>
+            <ImageView android:id="@+id/imageClock"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_103pxh"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_31pxh"
+                android:layout_marginStart="@dimen/_31pxh"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_width="@dimen/_103pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_clock"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_clock"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+

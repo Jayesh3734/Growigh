@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="welcomeVM" type="com.jayeshsapplication.app.modules.welcome.data.viewmodel.WelcomeVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearWelcome"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageHappysunbro"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_252pxh"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_173pxv"
+            android:layout_width="@dimen/_289pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_happysunbro"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_happysunbro"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtHeadline"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_45pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{welcomeVM.welcomeModel.txtHeadline}"
+            style="@style/txtNotoSansnotosansregular32" tools:text="@string/lbl_welcome_ayush"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnFeeds"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_41pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_9pxh"
+            android:paddingBottom="@dimen/_24pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_24pxv" android:singleLine="true"
+            android:text="@string/lbl_feeds" android:textAllCaps="false"
+            style="@style/btnGradientRounded" tools:text="@string/lbl_feeds"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnUploadImage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_9pxh"
+            android:paddingBottom="@dimen/_24pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_24pxv" android:singleLine="true"
+            android:text="@string/lbl_upload_image"
+            android:textAllCaps="false"
+            style="@style/btnGradientRounded_1" tools:text="@string/lbl_upload_image"/>
+    </LinearLayout>
+</layout>

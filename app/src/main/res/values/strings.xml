@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Growigh</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_share">Share</string>
+<string name="lbl_9_comments">9 Comments</string>
+<string name="lbl_latest">Latest</string>
+<string name="lbl_browse_by">Browse By</string>
+<string name="lbl_the_verge">The Verge</string>
+<string name="lbl_21_likes">21 Likes</string>
+<string name="lbl_feeds">Feeds</string>
+<string name="lbl_our_vision">Our Vision</string>
+<string name="lbl_older">Older</string>
+<string name="lbl_ayush">Jayesh</string>
+<string name="msg_view_all_9_comm">View all 9 Comments</string>
+<string name="lbl_skip_intro">Skip intro</string>
+<string name="lbl_about_us">About Us</string>
+<string name="lbl_ready">Ready</string>
+<string name="lbl_tech_news">Tech News</string>
+<string name="lbl_welcome_ayush">Welcome Jayesh</string>
+<string name="msg_lorem_ipsum_dol">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</string>
+<string name="lbl_upload_image">Upload Image</string>
+<string name="lbl_hello">Hello,
+</string>
+<string name="lbl_skip">Skip</string>
+<string name="lbl_explore">Explore</string>
+<string name="lbl_hello_ayush">Hello,
+Jayesh</string>
+<string name="msg_meta_explains_h">Meta explains how AI influences what we see on Facebook and Instagram</string>
+<string name="lbl_select_image">Select Image</string>
+<string name="lbl_our_mission">Our Mission</string>
+</resources>
